@@ -16,8 +16,10 @@
   </div>
   </div>
   <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <input type="checkbox" formControlName="isEmail" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
   <button type="submit" class="btn btn-primary" [disabled]="login.invalid">Submit</button>
 </form>
+
+<app-posts></app-posts>

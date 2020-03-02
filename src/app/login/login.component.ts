@@ -14,7 +14,8 @@ export class LoginComponent implements OnInit {
     username: ['', [Validators.required,
                     UsernameValidator.cannotContainSpace,
                     UsernameValidator.mustBeValidateEmail]],
-    password: ['', Validators.required]
+    password: ['', Validators.required],
+    isEmail: [ ]
   });
 
   ngOnInit(): void {
